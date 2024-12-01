@@ -9,7 +9,7 @@ class Greeting {
 
   static const platform = MethodChannel('com.Greeting.channelname');
 
-  static Future<dynamic> someMethod(args) async {
+  Future<dynamic> someMethod(args) async {
   try {
   final result = await platform.invokeMethod('Greeting', args);
   return result;
